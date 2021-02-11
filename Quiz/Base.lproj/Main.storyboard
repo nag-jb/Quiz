@@ -1,24 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ghibli_totoro.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3b0-ri-dz7">
+                                <rect key="frame" x="97.666666666666686" y="64" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="5w7-fL-B8o"/>
+                                    <constraint firstAttribute="width" constant="180" id="XXu-DG-NRF"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GHIBLI QUIZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuN-8h-KnC">
+                                <rect key="frame" x="99" y="290" width="177" height="42"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ジブリクイズ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRZ-Hv-dpX">
+                                <rect key="frame" x="97.666666666666686" y="246" width="180" height="30"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="___________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7n-of-qER">
+                                <rect key="frame" x="77.666666666666686" y="238" width="220" height="56"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Thin" family="PingFang HK" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nj-Ql-LiU">
+                                <rect key="frame" x="147.66666666666666" y="496" width="80" height="60"/>
+                                <color key="backgroundColor" red="0.1067998775440019" green="0.36774270304568524" blue="0.10944369138640883" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="5d1-Cd-bLL"/>
+                                    <constraint firstAttribute="height" constant="60" id="qxI-Hz-vep"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Icg-J1-Vav" kind="presentation" id="sDH-bL-Lrj"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="THF-yx-MLB">
+                                <rect key="frame" x="67.666666666666686" y="376" width="240" height="60"/>
+                                <color key="backgroundColor" red="0.89114777862885286" green="0.92216299434316085" blue="1" alpha="0.90113095537872689" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="94i-zu-kjc"/>
+                                    <constraint firstAttribute="width" constant="240" id="YuI-iZ-PwY"/>
+                                </constraints>
+                                <string key="text">ジブリに関する問題を出題！
+あなたのジブリ指数は何トトロ？</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.060735121369999999" green="0.61798483130000004" blue="0.90199428800000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="THF-yx-MLB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4Ei-kZ-3Et"/>
+                            <constraint firstItem="3b0-ri-dz7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7K0-RO-Agb"/>
+                            <constraint firstItem="3Nj-Ql-LiU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CXi-hk-f5t"/>
+                            <constraint firstItem="QRZ-Hv-dpX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IUV-fI-KQy"/>
+                            <constraint firstItem="s7n-of-qER" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KP8-jj-3BF"/>
+                            <constraint firstItem="s7n-of-qER" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-140" id="RWG-Y8-cZn"/>
+                            <constraint firstItem="cuN-8h-KnC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZAr-Hh-HAf"/>
+                            <constraint firstItem="3b0-ri-dz7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-252" id="Zbr-yM-zJT"/>
+                            <constraint firstItem="QRZ-Hv-dpX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-145" id="dPY-0P-bV1"/>
+                            <constraint firstItem="THF-yx-MLB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eBi-cE-DT4"/>
+                            <constraint firstItem="3Nj-Ql-LiU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="psU-FR-NgW"/>
+                            <constraint firstItem="cuN-8h-KnC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-95" id="u5Y-TI-3cv"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="528.98550724637687" y="118.52678571428571"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="8hJ-hZ-xGn">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Icg-J1-Vav" customClass="QuizViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u4b-r0-FQe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="問題文" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fb9-nZ-RsG">
+                                <rect key="frame" x="32.666666666666657" y="123" width="310" height="190"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="Gpy-Ai-AMM"/>
+                                    <constraint firstAttribute="height" constant="190" id="ywg-re-bbF"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NP-f8-Z8G">
+                                <rect key="frame" x="37.666666666666657" y="376" width="300" height="60"/>
+                                <color key="backgroundColor" red="0.85419971446700504" green="0.78421069357981854" blue="0.74039248831633919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Nxm-Zd-992"/>
+                                    <constraint firstAttribute="height" constant="60" id="XJe-Yt-apE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="A">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIr-rA-9XU">
+                                <rect key="frame" x="37.666666666666657" y="546" width="300" height="60"/>
+                                <color key="backgroundColor" red="0.8698644042" green="0.78110104800000002" blue="0.73332554100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Sjm-L1-puP"/>
+                                    <constraint firstAttribute="height" constant="60" id="wJC-lu-R5y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqJ-oN-FSk">
+                                <rect key="frame" x="37.666666666666657" y="461" width="300" height="60"/>
+                                <color key="backgroundColor" red="0.8698644042" green="0.78110104800000002" blue="0.73332554100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="8NL-20-bxF"/>
+                                    <constraint firstAttribute="height" constant="60" id="Bmz-zY-NqL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="B">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ghibli_totoro.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cdc-jN-Uk0">
+                                <rect key="frame" x="127.66666666666669" y="631" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="MSC-i9-Mjp"/>
+                                    <constraint firstAttribute="width" constant="120" id="rhJ-fK-6wL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nhc-gy-gz9"/>
+                        <color key="backgroundColor" red="0.060735121369999999" green="0.61798483130000004" blue="0.90199428800000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Fb9-nZ-RsG" firstAttribute="centerY" secondItem="u4b-r0-FQe" secondAttribute="centerY" constant="-188" id="Evl-CI-xDU"/>
+                            <constraint firstItem="1NP-f8-Z8G" firstAttribute="centerY" secondItem="u4b-r0-FQe" secondAttribute="centerY" id="F26-8t-PAf"/>
+                            <constraint firstItem="IqJ-oN-FSk" firstAttribute="centerX" secondItem="u4b-r0-FQe" secondAttribute="centerX" id="G50-Og-1oA"/>
+                            <constraint firstItem="FIr-rA-9XU" firstAttribute="centerY" secondItem="u4b-r0-FQe" secondAttribute="centerY" constant="170" id="Owi-Pz-5Ss"/>
+                            <constraint firstItem="cdc-jN-Uk0" firstAttribute="centerX" secondItem="u4b-r0-FQe" secondAttribute="centerX" id="Rn8-t7-lfX"/>
+                            <constraint firstItem="cdc-jN-Uk0" firstAttribute="centerY" secondItem="u4b-r0-FQe" secondAttribute="centerY" constant="285" id="SKH-Ci-mEL"/>
+                            <constraint firstItem="FIr-rA-9XU" firstAttribute="centerX" secondItem="u4b-r0-FQe" secondAttribute="centerX" id="Wen-4D-lm9"/>
+                            <constraint firstItem="Fb9-nZ-RsG" firstAttribute="centerX" secondItem="u4b-r0-FQe" secondAttribute="centerX" id="Wtx-xr-Gjg"/>
+                            <constraint firstItem="IqJ-oN-FSk" firstAttribute="centerY" secondItem="u4b-r0-FQe" secondAttribute="centerY" constant="85" id="lGG-Lo-nPq"/>
+                            <constraint firstItem="1NP-f8-Z8G" firstAttribute="centerX" secondItem="u4b-r0-FQe" secondAttribute="centerX" id="n0p-fz-HFP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choiceBotton1" destination="1NP-f8-Z8G" id="ZFV-sB-pXS"/>
+                        <outlet property="choiceBotton2" destination="IqJ-oN-FSk" id="wI7-Ib-EyC"/>
+                        <outlet property="choiceBotton3" destination="FIr-rA-9XU" id="NFr-Dp-EWL"/>
+                        <outlet property="quizTextView" destination="Fb9-nZ-RsG" id="Yzk-cR-WHg"/>
+                        <segue destination="QlB-fG-oFP" kind="presentation" identifier="toResultView" id="xTP-SE-1Nx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PIZ-Jc-BcZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1208.6956521739132" y="118.52678571428571"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="ke4-ra-vwG">
+            <objects>
+                <viewController id="QlB-fG-oFP" customClass="ResultViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mAr-iN-liJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ghibli_totoro.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mFJ-OI-jnO">
+                                <rect key="frame" x="37.666666666666657" y="104" width="300" height="250"/>
+                                <color key="backgroundColor" red="0.060735121369999999" green="0.61798483130000004" blue="0.90199428800000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="SsJ-dM-hf0"/>
+                                    <constraint firstAttribute="height" constant="250" id="edE-dS-PTO"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dou-t5-S3m">
+                                <rect key="frame" x="112.66666666666669" y="618" width="150" height="60"/>
+                                <color key="backgroundColor" red="0.1067998775440019" green="0.36774270304568524" blue="0.10944369138640883" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="NaK-gT-1pr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="タイトルに戻る">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="back" destination="QlB-fG-oFP" eventType="touchUpInside" id="Bl7-bI-L8b"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="結果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpe-YP-Il1">
+                                <rect key="frame" x="157.66666666666666" y="374" width="60" height="30"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="07H-fj-qWD"/>
+                        <color key="backgroundColor" red="0.060735121369999999" green="0.61798483130000004" blue="0.90199428800000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="dou-t5-S3m" firstAttribute="centerX" secondItem="mAr-iN-liJ" secondAttribute="centerX" id="40X-yW-fxO"/>
+                            <constraint firstItem="mFJ-OI-jnO" firstAttribute="centerY" secondItem="mAr-iN-liJ" secondAttribute="centerY" constant="-150" id="4Wu-R7-N2r"/>
+                            <constraint firstItem="fpe-YP-Il1" firstAttribute="centerX" secondItem="mAr-iN-liJ" secondAttribute="centerX" id="UA2-Au-1YK"/>
+                            <constraint firstItem="mFJ-OI-jnO" firstAttribute="centerX" secondItem="mAr-iN-liJ" secondAttribute="centerX" id="j9y-1u-LOx"/>
+                            <constraint firstAttribute="bottom" secondItem="dou-t5-S3m" secondAttribute="bottom" constant="80" id="wtf-WJ-ctv"/>
+                            <constraint firstItem="fpe-YP-Il1" firstAttribute="centerY" secondItem="mAr-iN-liJ" secondAttribute="centerY" constant="10" id="yd8-FT-Omo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="fpe-YP-Il1" id="Tvg-vr-2RP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atj-ie-th7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889.8550724637682" y="118.52678571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ghibli_totoro.jpg" width="480" height="360"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

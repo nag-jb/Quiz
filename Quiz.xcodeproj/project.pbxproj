@@ -15,6 +15,10 @@
 		1A77F7AA25D550C500C41BDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A77F7A825D550C500C41BDD /* LaunchScreen.storyboard */; };
 		1A77F7B525D550C500C41BDD /* QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77F7B425D550C500C41BDD /* QuizTests.swift */; };
 		1A77F7C025D550C500C41BDD /* QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77F7BF25D550C500C41BDD /* QuizUITests.swift */; };
+		1A77F7D125D5517100C41BDD /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77F7D025D5517100C41BDD /* QuizViewController.swift */; };
+		1A77F7D725D5519400C41BDD /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77F7D625D5519400C41BDD /* ResultViewController.swift */; };
+		1A77F7DF25D5533C00C41BDD /* how_cal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A77F7DE25D5533C00C41BDD /* how_cal.jpg */; };
+		1A77F7E425D5557000C41BDD /* ghibli_totoro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A77F7E325D5557000C41BDD /* ghibli_totoro.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		1A77F7BB25D550C500C41BDD /* QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A77F7BF25D550C500C41BDD /* QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizUITests.swift; sourceTree = "<group>"; };
 		1A77F7C125D550C500C41BDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A77F7D025D5517100C41BDD /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		1A77F7D625D5519400C41BDD /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		1A77F7DE25D5533C00C41BDD /* how_cal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = how_cal.jpg; sourceTree = "<group>"; };
+		1A77F7E325D5557000C41BDD /* ghibli_totoro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ghibli_totoro.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 		1A77F79C25D550C400C41BDD /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				1A77F7E325D5557000C41BDD /* ghibli_totoro.jpg */,
+				1A77F7DE25D5533C00C41BDD /* how_cal.jpg */,
 				1A77F79D25D550C400C41BDD /* AppDelegate.swift */,
 				1A77F79F25D550C400C41BDD /* SceneDelegate.swift */,
 				1A77F7A125D550C400C41BDD /* ViewController.swift */,
@@ -106,6 +116,8 @@
 				1A77F7A625D550C500C41BDD /* Assets.xcassets */,
 				1A77F7A825D550C500C41BDD /* LaunchScreen.storyboard */,
 				1A77F7AB25D550C500C41BDD /* Info.plist */,
+				1A77F7D025D5517100C41BDD /* QuizViewController.swift */,
+				1A77F7D625D5519400C41BDD /* ResultViewController.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -232,8 +244,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A77F7AA25D550C500C41BDD /* LaunchScreen.storyboard in Resources */,
+				1A77F7E425D5557000C41BDD /* ghibli_totoro.jpg in Resources */,
 				1A77F7A725D550C500C41BDD /* Assets.xcassets in Resources */,
 				1A77F7A525D550C400C41BDD /* Main.storyboard in Resources */,
+				1A77F7DF25D5533C00C41BDD /* how_cal.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A77F7D725D5519400C41BDD /* ResultViewController.swift in Sources */,
 				1A77F7A225D550C400C41BDD /* ViewController.swift in Sources */,
 				1A77F79E25D550C400C41BDD /* AppDelegate.swift in Sources */,
 				1A77F7A025D550C400C41BDD /* SceneDelegate.swift in Sources */,
+				1A77F7D125D5517100C41BDD /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
