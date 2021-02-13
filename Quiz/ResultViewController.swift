@@ -20,7 +20,7 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        resultLabel.text = String(correctAnswer)
+        resultLabel.text = "\(correctAnswer)トトロ！"
     }
     
     @IBAction func back(){

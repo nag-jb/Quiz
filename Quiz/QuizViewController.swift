@@ -49,7 +49,6 @@ class QuizViewController: UIViewController {
     
     //問題文と選択肢をラベルに表示させるメソッド
     func choiceQuiz(){
-        print("表示")
         
         //一時的にクイズを取り出しておく配列
         let tmpArray = quizArray[0] as! [Any]
@@ -89,7 +88,6 @@ class QuizViewController: UIViewController {
     @IBAction func choiceAnswer(sender: UIButton){
         
         let tmpArray = quizArray[0] as! [Any]
-        print("aaaaaaa")
         
         
         //sender.tagでクイズの正解番号とタグ番号を比較し正誤を判定
@@ -106,8 +104,7 @@ class QuizViewController: UIViewController {
         if quizArray.count == 0 {
             performSegueToResult()
         }else{
-            viewDidLoad()
-            print("cccccccc")
+            choiceQuiz()
         }
     }
     
