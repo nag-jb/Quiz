@@ -108,10 +108,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PiS-Fp-bzr">
-                                <rect key="frame" x="50" y="274" width="275" height="339"/>
+                                <rect key="frame" x="50" y="294" width="275" height="319"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NP-f8-Z8G">
-                                        <rect key="frame" x="12.666666666666657" y="0.0" width="249.99999999999997" height="99.666666666666671"/>
+                                        <rect key="frame" x="12.666666666666657" y="0.0" width="249.99999999999997" height="93"/>
                                         <color key="backgroundColor" red="0.85419971446700504" green="0.78421069357981854" blue="0.74039248831633919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="0Hy-XW-M0q"/>
@@ -125,7 +125,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqJ-oN-FSk">
-                                        <rect key="frame" x="12.666666666666657" y="119.66666666666669" width="249.99999999999997" height="99.666666666666686"/>
+                                        <rect key="frame" x="12.666666666666657" y="113" width="249.99999999999997" height="93"/>
                                         <color key="backgroundColor" red="0.8698644042" green="0.78110104800000002" blue="0.73332554100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="nMb-4Y-9W8"/>
@@ -139,7 +139,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIr-rA-9XU">
-                                        <rect key="frame" x="12.666666666666657" y="239.33333333333334" width="249.99999999999997" height="99.666666666666657"/>
+                                        <rect key="frame" x="12.666666666666657" y="226" width="249.99999999999997" height="93"/>
                                         <color key="backgroundColor" red="0.8698644042" green="0.78110104800000002" blue="0.73332554100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="Y7k-5P-Wpy"/>
@@ -168,7 +168,7 @@
                             <constraint firstItem="cdc-jN-Uk0" firstAttribute="leading" secondItem="nhc-gy-gz9" secondAttribute="leading" constant="110" id="2ae-bl-NsG"/>
                             <constraint firstItem="nhc-gy-gz9" firstAttribute="trailing" secondItem="PiS-Fp-bzr" secondAttribute="trailing" constant="50" id="At4-oe-C23"/>
                             <constraint firstItem="Fb9-nZ-RsG" firstAttribute="leading" secondItem="nhc-gy-gz9" secondAttribute="leading" constant="30" id="BlL-Yi-RdM"/>
-                            <constraint firstItem="PiS-Fp-bzr" firstAttribute="top" secondItem="Fb9-nZ-RsG" secondAttribute="bottom" constant="60" id="D7R-LO-HKI"/>
+                            <constraint firstItem="PiS-Fp-bzr" firstAttribute="top" secondItem="Fb9-nZ-RsG" secondAttribute="bottom" constant="80" id="D7R-LO-HKI"/>
                             <constraint firstItem="cdc-jN-Uk0" firstAttribute="top" secondItem="PiS-Fp-bzr" secondAttribute="bottom" constant="15" id="LL1-rG-rC4"/>
                             <constraint firstItem="Fb9-nZ-RsG" firstAttribute="top" secondItem="nhc-gy-gz9" secondAttribute="top" constant="70" id="M2d-X3-Gq7"/>
                             <constraint firstItem="PiS-Fp-bzr" firstAttribute="leading" secondItem="nhc-gy-gz9" secondAttribute="leading" constant="50" id="T74-gH-6oq"/>
